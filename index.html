@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saree & Ladies' Wear</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Fashion Hub</h1>
+    </header>
+    <nav class="navbar">
+        <a href="#sarees">Sarees</a>
+        <a href="#ladies-wear">Ladies' Wear</a>
+        <a href="#cart">Shopping Cart</a>
+    </nav>
+    <main>
+        <section id="sarees">
+            <h2>Sarees</h2>
+            <div class="product">
+                <img src="saree1.jpg" alt="Elegant Silk Saree">
+                <h3>Elegant Silk Saree</h3>
+                <p>Price: ₹2500</p>
+                <button onclick="addToCart('Elegant Silk Saree', 2500)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="saree2.jpg" alt="Traditional Cotton Saree">
+                <h3>Traditional Cotton Saree</h3>
+                <p>Price: ₹1800</p>
+                <button onclick="addToCart('Traditional Cotton Saree', 1800)">Add to Cart</button>
+            </div>
+        </section>
+        <section id="ladies-wear">
+            <h2>Ladies' Wear</h2>
+            <div class="product">
+                <img src="dress1.jpg" alt="Casual Kurti">
+                <h3>Casual Kurti</h3>
+                <p>Price: ₹1200</p>
+                <button onclick="addToCart('Casual Kurti', 1200)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="dress2.jpg" alt="Party Wear Gown">
+                <h3>Party Wear Gown</h3>
+                <p>Price: ₹3500</p>
+                <button onclick="addToCart('Party Wear Gown', 3500)">Add to Cart</button>
+            </div>
+        </section>
+        <section id="cart">
+            <h2>Shopping Cart</h2>
+            <ul id="cart-items"></ul>
+            <p id="total-price">Total: ₹0</p>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
